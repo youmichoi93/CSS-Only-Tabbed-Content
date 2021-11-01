@@ -1,0 +1,2 @@
+# sliders
+with pure CSS
