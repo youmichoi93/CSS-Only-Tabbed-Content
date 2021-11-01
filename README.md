@@ -1,2 +1,4 @@
-# sliders
-with pure CSS
+
+
+a slider with pure CSS
+a tab with  pure CSS
