@@ -10,7 +10,7 @@
 }
 
 .section .slide-wrap {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -64,7 +64,7 @@
 }
 
 .section .slide-list .textbox p {
-  font-size: 15px;
+  font-size: 20px;
   color: #fff;
   opacity: 0;
   transform: translateY(30px);
@@ -122,11 +122,11 @@
 }
 .section .left {
   left:10px;
-  background:url('./img/left.png') left center / 10% no-repeat;
+  background:url('./img/left.png') left center / 30% no-repeat;
 }
 .section .right {
   right:10px;
-  background:url('./img/right.png') right center / 10% no-repeat;
+  background:url('./img/right.png') right center / 30% no-repeat;
 }
 .section input[id="slide01"]:checked ~ .slide-wrap .slide-control > div:nth-child(1) {
   display:block;
@@ -149,7 +149,7 @@
 }
 .slide-page-list > li > label {
   display:block;
-  padding:8px 30px;
+  padding:8px 10px;
   border-radius:30px;
   background:#ccc;
   margin:20px 10px;
