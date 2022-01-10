@@ -34,6 +34,7 @@ input:checked + label {
   opacity: 1;
   -webkit-transition: .3s;
 }
+
 .panels {
   float: left;
   clear: both;
@@ -43,6 +44,47 @@ input:checked + label {
   border-radius: 0 10px 10px 10px;
   min-height: 315px;
 }
+
+.panels .panel:first-child::after{
+  content: "";
+  background-image: url("/img/pumkin.png");
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  float: right;
+}
+
+.panels .panel:nth-child(2)::after{
+  content: "";
+  background-image: url("/img/rabbit.png");
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  float: right;
+}
+
+.panels .panel:nth-child(3)::after{
+  content: "";
+  background-image: url("/img/teddy-bear.png");
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  float: right;
+}
+
+.panels .panel:last-child::after{
+  content: "";
+  background-image: url("/img/women.png");
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  float: right;
+}
+
 .panel {
   width: 100%;
   opacity: 0;
