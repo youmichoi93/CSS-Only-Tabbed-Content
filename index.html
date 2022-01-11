@@ -3,47 +3,69 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Blake's css only tab</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>Blake's slider</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
   </head>
   <body>
-    
-    <article class="tabs">
-      <input checked id="one" name="tabs" type="radio">
-      <label for="one">Tab One</label>
-      <input id="two" name="tabs" type="radio">
-      <label for="two">Tab Two</label>
-      <input id="three" name="tabs" type="radio">
-      <label for="three">Tab Three</label>
-      <input id="four" name="tabs" type="radio">
-      <label for="four">Tab Four</label>
-      <div class="panels">
-        <div class="panel">
-          <h2>This is Panel 1</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis cum officia qui quo! Voluptates repudiandae consequuntur at magnam nobis odit quidem recusandae qui hic, magni, odio accusantium. Hic, illum vel!
-          </p>
+  
+  <div class="section">
+    <input type="radio" name="slide" id=slide01 checked>
+    <input type="radio" name="slide" id=slide02>
+    <input type="radio" name="slide" id=slide03>
+    <div class="slide-wrap">
+      <ul class="slide-list">
+        <!-- slide -->
+        <li class="slide-item">
+          <a>
+            <div class="textbox">
+              <h2>커다란 호박 하나</h2>
+              <p>안녕하세요, 커다란 호박 하나입니다.</p>
+            </div>
+            <img src="./img/slide01.jpg">
+          </a>
+        </li>
+        <li class="slide-item">
+          <a>
+            <div class="textbox">
+              <h2>호박 마녀</h2>
+              <p>안녕하세요, 호박 마녀입니다.</p>
+            </div>
+            <img src="./img/slide02.jpg">
+          </a>
+        </li>
+        <li class="slide-item">
+          <a>
+            <div class="textbox">
+              <h2>알록달록 호박들</h2>
+              <p>안녕하세요 알록달록 호박들입니다.</p>
+            </div>
+            <img src="./img/slide03.jpg">
+          </a>
+        </li>
+        <!-- left,right arrows -->
+        <div class="slide-control">
+          <div>
+            <label for="slide03" class="left"></label>
+            <label for="slide02" class="right"></label>
+          </div>
+          <div>
+            <label for="slide01" class="left"></label>
+            <label for="slide03" class="right"></label>
+          </div>
+          <div>
+            <label for="slide02" class="left"></label>
+            <label for="slide01" class="right"></label>
+          </div>
         </div>
-        <div class="panel">
-          <h2>This is Panel 2</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis cum officia qui quo! Voluptates repudiandae consequuntur at magnam nobis odit quidem recusandae qui hic, magni, odio accusantium. Hic, illum vel!
-          </p>
-        </div>
-        <div class="panel">
-          <h2>This is Panel 3</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis cum officia qui quo! Voluptates repudiandae consequuntur at magnam nobis odit quidem recusandae qui hic, magni, odio accusantium. Hic, illum vel!
-          </p>
-        </div>
-        <div class="panel">
-          <h2>This is Panel 4</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis cum officia qui quo! Voluptates repudiandae consequuntur at magnam nobis odit quidem recusandae qui hic, magni, odio accusantium. Hic, illum vel!
-          </p>
-         </div>
-       </div>
-     </article>
-    
-    </body>
+      </ul>
+      <!-- page-list -->
+      <ul class="slide-page-list">
+        <li><label for="slide01"></label></li>
+        <li><label for="slide02"></label></li>
+        <li><label for="slide03"></label></li>
+      </ul>
+    </div>
+  </div>
+
+  </body>
 </html>
